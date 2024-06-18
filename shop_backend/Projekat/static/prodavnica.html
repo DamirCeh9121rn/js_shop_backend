@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html>
+    
+    <head>
+        <script src='prodavnica.js'></script>
+        <title>Prodavnica</title>
+    </head>
+
+    <body>
+        <section class="container content-section">
+            <h2 class="section-header">Prodavnice</h2>
+            <table border="3">
+                <thead>
+                <tr id="ProdavniceTabela">
+                    <th>Prodavnica ID</th>
+                    <th>Ime</th>
+                    <th>GradID</th>
+                </tr>
+                </thead>
+                <tbody class="tabela-prodavnice"></tbody>
+            </table>
+        </section>
+
+        <section class="container content-section">
+            <h2 class="section-header">Kreiraj prodavnicu</h2>
+            <div class="kreiraj-prodavnnicu-div">
+                <label for="ime">Ime:</label>
+                <input type="text" id="prodavnica-nova-ime" name="ime" placeholder="ime" required="">
+            </div>
+            <div class="kreiraj-prodavnicu-div">
+                <label for="grad">Grad:</label>
+                <select for="novi_task_prodavnica_grad" class="form-select" id="task_prodavnica_grad_nova">
+                        
+                </select>
+            </div>
+
+            <div>
+                <button type="button" id="kreirajProdavnicu">Kreiraj</button>
+            </div>
+        </section>
+
+
+        <section class="container content-section">
+            <h2 class="section-header">Azuriraj prodavnicu</h2>
+            <div clas="azuriraj-prodavnica-div">
+                <label for="azuriraj-id">Id:</label>
+                <input type="text" id="azuriraj-id" name="azuriraj-id" placeholder="azuriraj-id" required="">
+            </div>
+            <div class="azuriraj-prodavnica-div">
+                <label for="azuriraj-prezime">Ime:</label>
+                <input type="text" id="azuriraj-ime" name="azuriraj-ime" placeholder="azuriraj-ime" required="">
+            </div>
+            <div class="azuriraj-prodavnica-div">
+                <label for="azuriraj-grad">Grad:</label>
+                    <select for="novi_task_prodavnica_grad" class="form-select" id="task_prodavnica_grad_azuriraj">
+                        
+                    </select>
+            </div>
+            <div>
+                <button type="button" id="azurirajProdavnicu">Azuriraj</button>
+            </div>
+        </section>
+
+        <section class="container content-section">
+            <h2 class="section-header">Obrisi prodavnicu</h2>
+            <div class="obrisi-prodavnicu-div">
+                <label for="ime">ID:</label>
+                <input type="text" id="obrisi-prodavnicu" name="ime" placeholder="id" required="">
+            </div>
+            <div>
+                <button type="button" id="obrisiProdavnicu">Obrisi</button>
+            </div>
+        </section>
+    </body>
+
+</html>

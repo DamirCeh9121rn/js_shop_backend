@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html>
+    
+    <head>
+        <script src='stavka.js'></script>
+        <title>Stavka</title>
+    </head>
+
+    <body>
+        <section class="container content-section">
+            <h2 class="section-header">Stavke</h2>
+            <table border="3">
+                <thead>
+                <tr id="StavkaTabele">
+                    <th>Stavka ID</th>
+                    <th>Kolicina</th>
+                    <th>Cena</th>
+                    <th>Proizvod ID</th>
+                    <th>Racun ID</th>
+                </tr>
+                </thead>
+                <tbody class="tabela-stavki"></tbody>
+            </table>
+        </section>
+
+        <section class="container content-section">
+            <h2 class="section-header">Kreiraj recenziju</h2>
+            <div class="kreiraj-sta-div">
+                <label for="ime">Kolicina:</label>
+                <input type="text" id="stavka-nova-kolicina" name="kolicina" placeholder="kolicina" required="">
+            </div>
+            <div class="kreiraj-sta-div">
+                <label for="cena">Cena:</label>
+                <input type="text" id="stavka-nova-cena" name="cena" placeholder="cena" required="">
+            </div>
+            <div class="kreiraj-prodavnicu-div">
+                <label for="prodavnica">ProizvodID:</label>
+                <select for="novi_task_stavka" class="form-select" id="task_stavka_nova-proizvod">
+                        
+                </select>
+            </div>
+            <div class="kreiraj-prodavnicu-div">
+                <label for="prodavnica">RacunID:</label>
+                <select for="task_stavka_nova" class="form-select" id="task_stavka_nova-racun">
+                        
+                </select>
+            </div>
+
+            <div>
+                <button type="button" id="kreirajStavku">Kreiraj</button>
+            </div>
+        </section>
+
+
+        <section class="container content-section">
+            <h2 class="section-header">Azuriraj stavku</h2>
+            <div clas="azuriraj-stavka-div">
+                <label for="azuriraj-id">Id:</label>
+                <input type="text" id="azuriraj-id" name="azuriraj-id" placeholder="azuriraj-id" required="">
+            </div>
+            <div class="azuriraj-stavka-div">
+                <label for="azuriraj-kolicina">Kolicina:</label>
+                <input type="text" id="azuriraj-kolicina" name="azuriraj-kolicina" placeholder="azuriraj-kolicina" required="">
+            </div>
+            <div class="azuriraj-stavka-div">
+                <label for="azuriraj-cena">Cena:</label>
+                <input type="text" id="azuriraj-cena" name="azuriraj-cena" placeholder="azuriraj-cena" required="">
+            </div>
+            <div class="azuriraj-stavka-div">
+                <label for="azuriraj-proizvod">Proizvod:</label>
+                    <select for="task_stavka_nova" class="form-select" id="task_stavka_azuriraj-proizvod">
+                        
+                    </select>
+            </div>
+            <div class="azuriraj-stavka-div">
+                <label for="azuriraj-grad">RacunID:</label>
+                    <select for="task_stavka_nova" class="form-select" id="task_stavka_azuriraj-racun">
+                        
+                    </select>
+            </div>
+            <div>
+                <button type="button" id="asurirajStavku">Azuriraj</button>
+            </div>
+        </section>
+
+        <section class="container content-section">
+            <h2 class="section-header">Obrisi stavku</h2>
+            <div class="obrisi-stavka-div">
+                <label for="ime">ID:</label>
+                <input type="text" id="obrisi-stavka" name="ime" placeholder="id" required="">
+            </div>
+            <div>
+                <button type="button" id="obrisiStavku">Obrisi</button>
+            </div>
+        </section>
+    </body>
+
+</html>

@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html>
+    
+    <head>
+        <script src='skladiste.js'></script>
+        <title>Skladiste</title>
+    </head>
+
+    <body>
+        <section class="container content-section">
+            <h2 class="section-header">Skladista</h2>
+            <table border="3">
+                <thead>
+                <tr id="SkladisteTabela">
+                    <th>Skladiste ID</th>
+                    <th>Adresa</th>
+                    <th>ProdavnicaID</th>
+                </tr>
+                </thead>
+                <tbody class="tabela-skladista"></tbody>
+            </table>
+        </section>
+
+        <section class="container content-section">
+            <h2 class="section-header">Kreiraj skladiste</h2>
+            <div class="kreiraj-skladiste-div">
+                <label for="ime">Adresa:</label>
+                <input type="text" id="skladiste-nova-adresa" name="adresa" placeholder="adresa" required="">
+            </div>
+            <div class="kreiraj-prodavnicu-div">
+                <label for="prodavnica">Prodavnica:</label>
+                <select for="novi_task_skladiste" class="form-select" id="task_skladiste_nova">
+                        
+                </select>
+            </div>
+
+            <div>
+                <button type="button" id="kreirajSkladiste">Kreiraj</button>
+            </div>
+        </section>
+
+
+        <section class="container content-section">
+            <h2 class="section-header">Azuriraj skladiste</h2>
+            <div clas="azuriraj-skladiste-div">
+                <label for="azuriraj-id">Id:</label>
+                <input type="text" id="azuriraj-id" name="azuriraj-id" placeholder="azuriraj-id" required="">
+            </div>
+            <div class="azuriraj-skladiste-div">
+                <label for="azuriraj-adresa">Adresa:</label>
+                <input type="text" id="azuriraj-adresa" name="azuriraj-adresa" placeholder="azuriraj-adresa" required="">
+            </div>
+            <div class="azuriraj-skladiste-div">
+                <label for="azuriraj-grad">ProdavnicaID:</label>
+                    <select for="novi_task_skladiste" class="form-select" id="task_skladiste_azuriraj">
+                        
+                    </select>
+            </div>
+            <div>
+                <button type="button" id="azurirajSkladiste">Azuriraj</button>
+            </div>
+        </section>
+
+        <section class="container content-section">
+            <h2 class="section-header">Obrisi skladiste</h2>
+            <div class="obrisi-skladiste-div">
+                <label for="ime">ID:</label>
+                <input type="text" id="obrisi-skladiste" name="ime" placeholder="id" required="">
+            </div>
+            <div>
+                <button type="button" id="obrisiSkladiste">Obrisi</button>
+            </div>
+        </section>
+    </body>
+
+</html>

@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html>
+    
+    <head>
+        <script src='kategorija.js'></script>
+        <title>Kategorija</title>
+    </head>
+
+    <body>
+        <section class="container content-section">
+            <h2 class="section-header">Kategorije</h2>
+            <table border="3">
+                <thead>
+                <tr id="kategorijaTabela">
+                    <th>Kategorija ID</th>
+                    <th>naziv</th>
+                </tr>
+                </thead>
+                <tbody class="tabela-kategorija"></tbody>
+            </table>
+        </section>
+
+        <section class="container content-section">
+            <h2 class="section-header">Kreiraj kategoriju</h2>
+            <div class="kreiraj-kategoriju-div">
+                <label for="ime">Ime:</label>
+                <input type="text" id="kategorija-nova" name="kategorija" placeholder="kategorija" required="">
+            </div>
+            <div>
+                <button type="button" id="kreirajKategoriju">Kreiraj</button>
+            </div>
+        </section>
+
+
+        <section class="container content-section">
+            <h2 class="section-header">Azuriraj kategoriju</h2>
+            <div clas="azuriraj-kategoriju-div">
+                <label for="azuriraj-id">Id:</label>
+                <input type="text" id="azuriraj-id" name="azuriraj-id" placeholder="azuriraj-id" required="">
+            </div>
+            <div class="azuriraj-kategoriju-div">
+                <label for="azuriraj-naziv">Naziv:</label>
+                <input type="text" id="azuriraj-naziv" name="azuriraj-naziv" placeholder="azuriraj-naziv" required="">
+            </div>
+            <div>
+                <button type="button" id="azurirajKategoriju">Azuriraj</button>
+            </div>
+        </section>
+
+        <section class="container content-section">
+            <h2 class="section-header">Obrisi kategoriju</h2>
+            <div class="obrisi-kategoriju-div">
+                <label for="ime">Ime:</label>
+                <input type="text" id="obrisi-kategoriju-div" name="ime" placeholder="id" required="">
+            </div>
+            <div>
+                <button type="button" id="obrisiKategoriju">Obrisi</button>
+            </div>
+        </section>
+    </body>
+
+</html>

@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html>
+    
+    <head>
+        <script src='korisnik.js'></script>
+        <title>Korisnik</title>
+    </head>
+
+    <body>
+        <section class="container content-section">
+            <h2 class="section-header">Korisnici</h2>
+            <table border="3">
+                <thead>
+                <tr id="KorisniciTabela">
+                    <th>Korisnik ID</th>
+                    <th>Ime</th>
+                    <th>Prezime</th>
+                    <th>E-mail</th>
+                    <th>Sifra</th>
+                    <th>Tip</th>
+                </tr>
+                </thead>
+                <tbody class="tabela-korisnici"></tbody>
+            </table>
+        </section>
+
+        <section class="container content-section">
+            <h2 class="section-header">Kreiraj korisnika</h2>
+            <div class="kreiraj-korisnika-div">
+                <label for="ime">Ime:</label>
+                <input type="text" id="korisnik-novi-ime" name="ime" placeholder="ime" required="">
+            </div>
+            <div class="kreiraj-korisnika-div">
+                <label for="prezime">Prezime:</label>
+                <input type="text" id="korisnik-novi-prezime" name="prezime" placeholder="prezime" required="">
+            </div>
+            <div class="kreiraj-korisnika-div">
+                <label for="email">E-mail:</label>
+                <input type="text" id="korisnik-novi-email" name="e-mail" placeholder="e-mail" required="">
+            </div>
+            <div class="kreiraj-korisnika-div">
+                <label for="sifra">Sifra:</label>
+                <input type="text" id="korisnik-novi-sifra" name="sifra" placeholder="sifra" required="">
+            </div>
+            <div class="kreiraj-korisnika-div">
+                <label for="tip">Tip:</label>
+                <input type="text" id="korisnik-novi-tip" name="tip" placeholder="tip" required="">
+            </div>
+
+            <div>
+                <button type="button" id="kreirajKorisnika">Kreiraj</button>
+            </div>
+        </section>
+
+
+        <section class="container content-section">
+            <h2 class="section-header">Azuriraj korisnika</h2>
+            <div clas="azuriraj-korisnika-div">
+                <label for="azuriraj-id">Id:</label>
+                <input type="text" id="azuriraj-id" name="azuriraj-id" placeholder="azuriraj-id" required="">
+            </div>
+            <div class="azuriraj-korisnika-div">
+                <label for="azuriraj-prezime">Ime:</label>
+                <input type="text" id="azuriraj-ime" name="azuriraj-ime" placeholder="azuriraj-ime" required="">
+            </div>
+            <div class="azuriraj-korisnika-div">
+                <label for="azuriraj-prezime">Prezime:</label>
+                <input type="text" id="azuriraj-prezime" name="azuriraj-prezime" placeholder="azuriraj-prezime" required="">
+            </div>
+            <div class="azuriraj-korisnika-div">
+                <label for="azuriraj-email">E-mail:</label>
+                <input type="text" id="azuriraj-email" name="azuriraj-email" placeholder="azuriraj-email" required="">
+            </div>
+            <div class="azuriraj-korisnika-div">
+                <label for="azuriraj-sifra">Sifra:</label>
+                <input type="text" id="azuriraj-sifra" name="azuriraj-sifra" placeholder="azuriraj-sifra" required="">
+            </div>
+            <div class="azuriraj-korisnika-div">
+                <label for="azuriraj-tip">Tip:</label>
+                <input type="text" id="azuriraj-tip" name="azuriraj-tip" placeholder="azuriraj-tip" required="">
+            </div>
+            <div>
+                <button type="button" id="azurirajKorisnika">Azuriraj</button>
+            </div>
+        </section>
+
+        <section class="container content-section">
+            <h2 class="section-header">Obrisi korisnika</h2>
+            <div class="obrisi-korisnika-div">
+                <label for="ime">ID:</label>
+                <input type="text" id="obrisi-korisnika" name="ime" placeholder="id" required="">
+            </div>
+            <div>
+                <button type="button" id="obrisiKorisnika">Obrisi</button>
+            </div>
+        </section>
+    </body>
+
+</html>

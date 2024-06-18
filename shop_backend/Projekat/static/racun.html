@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html>
+    
+    <head>
+        <script src='racun.js'></script>
+        <title>Racun</title>
+    </head>
+
+    <body>
+        <section class="container content-section">
+            <h2 class="section-header">Racuni</h2>
+            <table border="3">
+                <thead>
+                <tr id="RacuniTabela">
+                    <th>Racun ID</th>
+                    <th>Ukupna Cena</th>
+                    <th>Datum</th>
+                    <th>Korisnik</th>
+                    <th>Prodavnica</th>
+                </tr>
+                </thead>
+                <tbody class="tabela-racuna"></tbody>
+            </table>
+        </section>
+
+        <section class="container content-section">
+            <h2 class="section-header">Kreiraj racun</h2>
+            <div class="kreiraj-racun-div">
+                <label for="ime">Ukupna cena:</label>
+                <input type="text" id="racun-nova-cena" name="cena" placeholder="ukupna cena" required="">
+            </div>
+            <div class="kreiraj-racun-div">
+                <label for="ime">Datum:</label>
+                <input type="text" id="racun-nova-datum" name="Datum" placeholder="Datum" required="">
+            </div>
+            <div class="kreiraj-prodavnicu-div">
+                <label for="prodavnica">Korisnik:</label>
+                <select for="novi_task_racun" class="form-select" id="task_racun_nova-korisnik">
+                        
+                </select>
+            </div>
+            <div class="kreiraj-prodavnicu-div">
+                <label for="prodavnica">Prodavnica:</label>
+                <select for="novi_task_racun" class="form-select" id="task_racun_nova-prodavnica">
+                        
+                </select>
+            </div>
+
+            <div>
+                <button type="button" id="kreirajRacun">Kreiraj</button>
+            </div>
+        </section>
+
+
+        <section class="container content-section">
+            <h2 class="section-header">Azuriraj Racun</h2>
+            <div clas="azuriraj-racun-div">
+                <label for="azuriraj-id">Id:</label>
+                <input type="text" id="azuriraj-id" name="azuriraj-id" placeholder="azuriraj-id" required="">
+            </div>
+            <div class="azuriraj-racun-div">
+                <label for="azuriraj-adresa">Ukupna cena:</label>
+                <input type="text" id="azuriraj-cena" name="azuriraj-cena" placeholder="azuriraj-cena" required="">
+            </div>
+            <div class="azuriraj-racun-div">
+                <label for="azuriraj-adresa">Datum:</label>
+                <input type="text" id="azuriraj-datum" name="azuriraj-datum" placeholder="azuriraj-datum" required="">
+            </div>
+            <div class="azuriraj-racun-div">
+                <label for="azuriraj-grad">Korisnik:</label>
+                    <select for="novi_task_racun" class="form-select" id="task_racun_azuriraj-korisnik">
+                        
+                    </select>
+            </div>
+            <div class="azuriraj-racun-div">
+                <label for="azuriraj-grad">Prodavnica:</label>
+                    <select for="novi_task_racun" class="form-select" id="task_racun_azuriraj-prodavnica">
+                        
+                    </select>
+            </div>
+            <div>
+                <button type="button" id="azurirajRacun">Azuriraj</button>
+            </div>
+        </section>
+
+        <section class="container content-section">
+            <h2 class="section-header">Obrisi racun</h2>
+            <div class="obrisi-racun-div">
+                <label for="ime">ID:</label>
+                <input type="text" id="obrisi-racun" name="ime" placeholder="id" required="">
+            </div>
+            <div>
+                <button type="button" id="obrisiRacun">Obrisi</button>
+            </div>
+        </section>
+    </body>
+
+</html>

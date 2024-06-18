@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html>
+    
+    <head>
+        <script src='stanje.js'></script>
+        <title>Stanje</title>
+    </head>
+
+    <body>
+        <section class="container content-section">
+            <h2 class="section-header">Stanja</h2>
+            <table border="3">
+                <thead>
+                <tr id="StanjaTabele">
+                    <th>Stanje ID</th>
+                    <th>Kolicina</th>
+                    <th>Skladiste ID</th>
+                    <th>Proizvod ID</th>
+                </tr>
+                </thead>
+                <tbody class="tabela-stanja"></tbody>
+            </table>
+        </section>
+
+        <section class="container content-section">
+            <h2 class="section-header">Kreiraj recenziju</h2>
+            <div class="kreiraj-stanja-div">
+                <label for="ime">Kolicina:</label>
+                <input type="text" id="stanja-nova-kolicina" name="kolicina" placeholder="kolicina" required="">
+            </div>
+            <div class="kreiraj-prodavnicu-div">
+                <label for="prodavnica">SkladisteID:</label>
+                <select for="novi_task_stanja" class="form-select" id="task_stanja_nova-skladiste">
+                        
+                </select>
+            </div>
+            <div class="kreiraj-prodavnicu-div">
+                <label for="prodavnica">Proizvod:</label>
+                <select for="task_stanja_nova" class="form-select" id="task_stanja_nova-proizvod">
+                        
+                </select>
+            </div>
+
+            <div>
+                <button type="button" id="kreirajStanje">Kreiraj</button>
+            </div>
+        </section>
+
+
+        <section class="container content-section">
+            <h2 class="section-header">Azuriraj stanje</h2>
+            <div clas="azuriraj-stanje-div">
+                <label for="azuriraj-id">Id:</label>
+                <input type="text" id="azuriraj-id" name="azuriraj-id" placeholder="azuriraj-id" required="">
+            </div>
+            <div class="azuriraj-stanje-div">
+                <label for="azuriraj-kolicina">Kolicina:</label>
+                <input type="text" id="azuriraj-kolicina" name="azuriraj-kolicina" placeholder="azuriraj-kolicina" required="">
+            </div>
+            <div class="azuriraj-stanje-div">
+                <label for="azuriraj-grad">Skladiste:</label>
+                    <select for="task_stanja_nova" class="form-select" id="task_stanja_azuriraj-skladiste">
+                        
+                    </select>
+            </div>
+            <div class="azuriraj-stanje-div">
+                <label for="azuriraj-grad">Proizvod:</label>
+                    <select for="task_stanja_nova" class="form-select" id="task_stanja_azuriraj-proizvod">
+                        
+                    </select>
+            </div>
+            <div>
+                <button type="button" id="azurirajStanje">Azuriraj</button>
+            </div>
+        </section>
+
+        <section class="container content-section">
+            <h2 class="section-header">Obrisi stanje</h2>
+            <div class="obrisi-stanje-div">
+                <label for="ime">ID:</label>
+                <input type="text" id="obrisi-stanje" name="ime" placeholder="id" required="">
+            </div>
+            <div>
+                <button type="button" id="obrisiStanje">Obrisi</button>
+            </div>
+        </section>
+    </body>
+
+</html>

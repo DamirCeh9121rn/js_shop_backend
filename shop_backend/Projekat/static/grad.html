@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html>
+    
+    <head>
+        <script src='grad.js'></script>
+        <title>Grad</title>
+    </head>
+
+    <body>
+        <section class="container content-section">
+            <h2 class="section-header">Gradovi</h2>
+            <table border="3">
+                <thead>
+                <tr id="gradoviTabela">
+                    <th>Grad ID</th>
+                    <th>Ime</th>
+                </tr>
+                </thead>
+                <tbody class="tabela-gradova"></tbody>
+            </table>
+        </section>
+
+        <section class="container content-section">
+            <h2 class="section-header">Kreiraj grad</h2>
+            <div class="kreiraj-grad-div">
+                <label for="ime">Ime:</label>
+                <input type="text" id="ime-novo" name="ime" placeholder="ime" required="">
+            </div>
+            <div>
+                <button type="button" id="kreirajGrad">Kreiraj</button>
+            </div>
+        </section>
+
+
+        <section class="container content-section">
+            <h2 class="section-header">Azuriraj grad</h2>
+            <div clas="azuriraj-grad-div">
+                <label for="azuriraj-id">Id:</label>
+                <input type="text" id="azuriraj-id" name="azuriraj-id" placeholder="azuriraj-id" required="">
+            </div>
+            <div class="azuriraj-grad-div">
+                <label for="azuriraj-ime">Ime:</label>
+                <input type="text" id="azuriraj-ime" name="azuriraj-ime" placeholder="azuriraj-ime" required="">
+            </div>
+            <div>
+                <button type="button" id="azurirajGrad">Azuriraj</button>
+            </div>
+        </section>
+
+        <section class="container content-section">
+            <h2 class="section-header">Obrisi grad</h2>
+            <div class="obrisi-grad-div">
+                <label for="ime">Ime:</label>
+                <input type="text" id="obrisi-grad-div" name="ime" placeholder="id" required="">
+            </div>
+            <div>
+                <button type="button" id="obrisiGrad">Obrisi</button>
+            </div>
+        </section>
+    </body>
+
+</html>

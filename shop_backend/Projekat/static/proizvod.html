@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html>
+    
+    <head>
+        <script src='proizvod.js'></script>
+        <title>Proizvod</title>
+    </head>
+
+    <body>
+        <section class="container content-section">
+            <h2 class="section-header">Proizvodi</h2>
+            <table border="3">
+                <thead>
+                <tr id="ProizvodTabela">
+                    <th>Prodavnica ID</th>
+                    <th>Naziv</th>
+                    <th>Cena</th>
+                    <th>KategorijaID</th>
+                </tr>
+                </thead>
+                <tbody class="tabela-prizvodi"></tbody>
+            </table>
+        </section>
+
+        <section class="container content-section">
+            <h2 class="section-header">Kreiraj proizvod</h2>
+            <div class="kreiraj-proizvod-div">
+                <label for="ime">Naziv:</label>
+                <input type="text" id="proizvod-nova-naziv" name="naziv" placeholder="naziv" required="">
+            </div>
+            <div class="kreiraj-proizvod-div">
+                <label for="ime">Cena:</label>
+                <input type="text" id="proizvod-nova-cena" name="cena" placeholder="cena" required="">
+            </div>
+            <div class="kreiraj-prodavnicu-div">
+                <label for="grad">Grad:</label>
+                <select for="novi_task_proizvod" class="form-select" id="task_proizvod_nova">
+                        
+                </select>
+            </div>
+
+            <div>
+                <button type="button" id="kreirajProizvod">Kreiraj</button>
+            </div>
+        </section>
+
+
+        <section class="container content-section">
+            <h2 class="section-header">Azuriraj proizvod</h2>
+            <div clas="azuriraj-proizvod-div">
+                <label for="azuriraj-id">Id:</label>
+                <input type="text" id="azuriraj-id" name="azuriraj-id" placeholder="azuriraj-id" required="">
+            </div>
+            <div class="azuriraj-prozvod-div">
+                <label for="azuriraj-naziv">Naziv:</label>
+                <input type="text" id="azuriraj-naziv" name="azuriraj-naziv" placeholder="azuriraj-naziv" required="">
+            </div>
+            <div class="azuriraj-prozvod-div">
+                <label for="azuriraj-cenu">Cena:</label>
+                <input type="text" id="azuriraj-cenu" name="azuriraj-cenu" placeholder="azuriraj-cenu" required="">
+            </div>
+            <div class="azuriraj-proizvod-div">
+                <label for="azuriraj-grad">KategorijaID:</label>
+                    <select for="novi_task_proizvod" class="form-select" id="task_proizvod_azuriraj">
+                        
+                    </select>
+            </div>
+            <div>
+                <button type="button" id="azurirajProizvod">Azuriraj</button>
+            </div>
+        </section>
+
+        <section class="container content-section">
+            <h2 class="section-header">Obrisi proizvod</h2>
+            <div class="obrisi-proizvod-div">
+                <label for="ime">ID:</label>
+                <input type="text" id="obrisi-proizvod" name="ime" placeholder="id" required="">
+            </div>
+            <div>
+                <button type="button" id="obrisiProizvod">Obrisi</button>
+            </div>
+        </section>
+    </body>
+
+</html>

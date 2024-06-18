@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html>
+    
+    <head>
+        <script src='recenzija.js'></script>
+        <title>Recenzija</title>
+    </head>
+
+    <body>
+        <section class="container content-section">
+            <h2 class="section-header">Recenzije</h2>
+            <table border="3">
+                <thead>
+                <tr id="RecenzijeTabela">
+                    <th>Recenzija ID</th>
+                    <th>Ocena</th>
+                    <th>Opis</th>
+                    <th>Proizvod ID</th>
+                    <th>Korisnik ID</th>
+                </tr>
+                </thead>
+                <tbody class="tabela-recenzija"></tbody>
+            </table>
+        </section>
+
+        <section class="container content-section">
+            <h2 class="section-header">Kreiraj recenziju</h2>
+            <div class="kreiraj-recenzija-div">
+                <label for="ime">Ocena</label>
+                <input type="text" id="recenzija-nova-ocena" name="cena" placeholder="ocena" required="">
+            </div>
+            <div class="kreiraj-recenzija-div">
+                <label for="ime">Opis:</label>
+                <input type="text" id="recenzija-nova-opis" name="Datum" placeholder="opis" required="">
+            </div>
+            <div class="kreiraj-prodavnicu-div">
+                <label for="prodavnica">Proizvod:</label>
+                <select for="novi_task_recenzija" class="form-select" id="task_recenzija_nova-proizvod">
+                        
+                </select>
+            </div>
+            <div class="kreiraj-prodavnicu-div">
+                <label for="prodavnica">Korisnik:</label>
+                <select for="novi_task_recenzija" class="form-select" id="task_recenzija_nova-korisnik">
+                        
+                </select>
+            </div>
+
+            <div>
+                <button type="button" id="kreirajRecenziju">Kreiraj</button>
+            </div>
+        </section>
+
+
+        <section class="container content-section">
+            <h2 class="section-header">Azuriraj recenziju</h2>
+            <div clas="azuriraj-recenzija-div">
+                <label for="azuriraj-id">Id:</label>
+                <input type="text" id="azuriraj-id" name="azuriraj-id" placeholder="azuriraj-id" required="">
+            </div>
+            <div class="azuriraj-recenzija-div">
+                <label for="azuriraj-ocena">Ocena:</label>
+                <input type="text" id="azuriraj-ocena" name="azuriraj-ocena" placeholder="azuriraj-ocena" required="">
+            </div>
+            <div class="azuriraj-recenzija-div">
+                <label for="azuriraj-opis">Opis:</label>
+                <input type="text" id="azuriraj-opis" name="azuriraj-opis" placeholder="azuriraj-opis" required="">
+            </div>
+            <div class="azuriraj-recenzija-div">
+                <label for="azuriraj-Proizvod">Proizvod:</label>
+                    <select for="novi_task_recenzija" class="form-select" id="task_recenzija_azuriraj-proizvod">
+                        
+                    </select>
+            </div>
+            <div class="azuriraj-recenzija-div">
+                <label for="azuriraj-grad">Korisnik:</label>
+                    <select for="novi_task_recenzija" class="form-select" id="task_recenzija_azuriraj-korisnik">
+                        
+                    </select>
+            </div>
+            <div>
+                <button type="button" id="azurirajRecenziju">Azuriraj</button>
+            </div>
+        </section>
+
+        <section class="container content-section">
+            <h2 class="section-header">Obrisi recenziju</h2>
+            <div class="obrisi-recenzija-div">
+                <label for="ime">ID:</label>
+                <input type="text" id="obrisi-recenziju" name="ime" placeholder="id" required="">
+            </div>
+            <div>
+                <button type="button" id="obrisiRecenziju">Obrisi</button>
+            </div>
+        </section>
+    </body>
+
+</html>

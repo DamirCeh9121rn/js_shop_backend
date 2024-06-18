@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <title>Login/Sign up</title>
+    <script src="login.js"></script>
+</head>
+
+<body>
+    <div class="main">
+        <div class="signup">
+            <form>
+                <label for="chk" aria-hidden="true">Sign up</label>
+                <input type="text" id="ime" name="ime" placeholder="ime" required="">
+                <input type="text" id="prezime" name="prezime" placeholder="prezime" required="">
+                <input type="password" id="sifra" autocomplete="on" name="sifra" placeholder="sifra" required="">
+                <input type="email" id="email" name="email" placeholder="email" required="">
+                <select for="tip" class="tip" id="tip">
+                    <option value="ADMIN" selected>ADMIN</option>
+                    <option value="MODERATOR" selected>MODERATOR</option>
+                    <option value="KORISNIK" selected>KORISNIK</option>
+                </select>
+                <button type="button" id="signup">Sign up</button>
+            </form>
+        </div>
+
+        <div class="login">
+            <form>
+                <label id="" for="chk" aria-hidden="true">Login</label>
+                <input id="email-login" type="email" name="email" placeholder="email" required="">
+                <input id="sifra-login" type="sifra" autocomplete="on" name="sifra" placeholder="sifra" required="">
+                <button type="button" id="login">Login</button>
+            </form>
+        </div>
+    </div>
+</body>
+
+</html>
